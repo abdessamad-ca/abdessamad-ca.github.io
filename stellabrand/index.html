@@ -3,49 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StellaBrand Logo Maker - Chrome Extension</title>
-    <meta name="description" content="Create beautiful logos with StellaBrand Logo Maker. Professional design tools with privacy.">
-    <meta name="google-site-verification" content="H7vnJw7lKHd8IqAINBjt157A7aVu-ocMVbg4wy6PDG1" />
+    <title>Privacy Policy - StellaBrand Logo Maker</title>
+    <meta name="description" content="Privacy Policy for StellaBrand Chrome Extension - Free Logo Maker & Brand Kit">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-        header { background: rgba(255,255,255,0.1); color: white; padding: 40px; border-radius: 15px; margin-bottom: 30px; text-align: center; }
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-        .subtitle { font-size: 1.1em; opacity: 0.9; }
-        .content { background: white; padding: 40px; border-radius: 15px; margin-bottom: 30px; }
-        h2 { color: #667eea; margin-bottom: 20px; font-size: 1.8em; }
-        p { line-height: 1.6; color: #333; margin-bottom: 15px; }
-        ul { margin-left: 20px; margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
-        .links { text-align: center; }
-        .btn { display: inline-block; margin: 10px; padding: 12px 30px; background: #667eea; color: white; text-decoration: none; border-radius: 25px; font-weight: bold; }
-        .btn:hover { background: #764ba2; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .logo svg {
+            width: 44px;
+            height: 44px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .tldr {
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .tldr h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tldr ul {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        .tldr li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+        }
+
+        .tldr li::before {
+            content: "✓";
+            font-weight: 700;
+            color: #86efac;
+        }
+
+        section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #475569;
+            margin: 20px 0 12px 0;
+        }
+
+        p {
+            color: #475569;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: #475569;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #8b5cf6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        td {
+            color: #475569;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box a {
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #8b5cf6;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 24px;
+                border-radius: 12px;
+            }
+
+            .tldr {
+                padding: 20px 24px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>StellaBrand Logo Maker</h1>
-            <p class="subtitle">Professional Logo Design Chrome Extension</p>
-        </header>
-        <div class="content">
-            <h2>Create Beautiful Logos</h2>
-            <p>StellaBrand is a privacy-first Chrome extension that helps you create professional logos instantly.</p>
-            <h2>Features</h2>
-            <ul>
-                <li>Privacy-first design - all logos created locally</li>
-                <li>Professional templates and fonts</li>
-                <li>Real-time preview</li>
-                <li>Easy export in multiple formats</li>
-            </ul>
-            <h2>Links</h2>
-            <div class="links">
-                <a href="https://github.com/abdessamad-ca" class="btn">GitHub</a>
-                <a href="https://github.com/abdessamad-ca/stellabrand-privacy-policy" class="btn">Privacy Policy</a>
+            <div class="logo">
+                <!-- StellaBrand Magic Wand Logo -->
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="25" y1="85" x2="50" y2="35" stroke="#8b5cf6" stroke-width="5" stroke-linecap="round"/>
+                    <polygon points="50,10 54,22 66,22 56,30 60,42 50,34 40,42 44,30 34,22 46,22" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="72" cy="15" r="2.5" fill="#8b5cf6"/>
+                    <circle cx="78" cy="28" r="2" fill="#8b5cf6"/>
+                    <circle cx="70" cy="38" r="2" fill="#8b5cf6"/>
+                    <circle cx="30" cy="18" r="2" fill="#8b5cf6"/>
+                    <circle cx="25" cy="28" r="1.5" fill="#8b5cf6"/>
+                    <polygon points="82,22 84,19 86,22 84,25" fill="#8b5cf6"/>
+                    <circle cx="18" cy="90" r="3" fill="#8b5cf6" opacity="0.6"/>
+                    <circle cx="12" cy="82" r="2" fill="#8b5cf6" opacity="0.4"/>
+                </svg>
+                <span class="logo-text">StellaBrand</span>
             </div>
-            <p style="margin-top: 30px; text-align: center; color: #999;">© 2026 StellaBrand</p>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: January 2026</p>
+        </header>
+
+        <div class="tldr">
+            <h2>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                TL;DR - Summary
+            </h2>
+            <ul>
+                <li>We do NOT collect personal data</li>
+                <li>We do NOT track your usage</li>
+                <li>All logo creation happens locally on your device</li>
+                <li>We only use Chrome storage for your preferences</li>
+                <li>Premium payments are handled securely by ExtensionPay/Stripe</li>
+            </ul>
         </div>
+
+        <section>
+            <h2>Information We Collect</h2>
+
+            <h3>Information We DO NOT Collect</h3>
+            <ul>
+                <li>Personal identification information (name, email, address)</li>
+                <li>Usage analytics or tracking data</li>
+                <li>Logo designs or brand content you create</li>
+                <li>Browsing history or activity</li>
+            </ul>
+
+            <h3>Information Stored Locally</h3>
+            <p>The extension stores the following data locally on your device using Chrome's storage API:</p>
+            <ul>
+                <li><strong>Logo Settings:</strong> Your current logo design (text, font, colors, layout)</li>
+                <li><strong>Preferences:</strong> Theme preference (dark/light mode), recent colors, recent icons</li>
+                <li><strong>Premium Status:</strong> Whether you have an active premium subscription</li>
+            </ul>
+            <p>This data never leaves your device (except premium status sync), is not accessible to us or any third party, and can be cleared by uninstalling the extension.</p>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+
+            <h3>Google Fonts API</h3>
+            <p>We connect to Google Fonts to load font files for your logos. Only font data is requested - no personal information is sent.</p>
+            <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a></p>
+
+            <h3>ExtensionPay (Premium Subscriptions)</h3>
+            <p>If you choose to upgrade to Premium, payments are processed by ExtensionPay which uses Stripe.</p>
+            <ul>
+                <li>We receive only: subscription status (active/inactive) and subscription date</li>
+                <li>We do NOT receive: payment details, credit card numbers, billing address</li>
+            </ul>
+            <p>
+                <a href="https://extensionpay.com/privacy" target="_blank" rel="noopener">ExtensionPay Privacy Policy</a> |
+                <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe Privacy Policy</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Security</h2>
+            <ul>
+                <li>All logo creation and export happens locally in your browser</li>
+                <li>No data is transmitted to our servers (we don't have servers for user data)</li>
+                <li>Premium status is synced securely through ExtensionPay's encrypted channels</li>
+                <li>We use Chrome's secure storage APIs for local data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> View your stored data via Chrome's extension storage</li>
+                <li><strong>Delete:</strong> Remove all data by uninstalling the extension</li>
+                <li><strong>Export:</strong> Download your logos at any time using the export feature</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>StellaBrand does not knowingly collect information from children under 13. The extension is designed for general audiences.</p>
+        </section>
+
+        <section>
+            <h2>Permissions Explained</h2>
+            <p>The extension requests the following Chrome permissions:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Why We Need It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>storage</code></td>
+                        <td>Save your logo designs and preferences locally</td>
+                    </tr>
+                    <tr>
+                        <td><code>alarms</code></td>
+                        <td>Schedule premium status checks (for subscription sync)</td>
+                    </tr>
+                    <tr>
+                        <td><code>downloads</code> (optional)</td>
+                        <td>Enable one-click logo downloads</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Host Permissions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Host</th>
+                        <th>Why We Need It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fonts.googleapis.com</td>
+                        <td>Load Google Fonts for your logos</td>
+                    </tr>
+                    <tr>
+                        <td>fonts.gstatic.com</td>
+                        <td>Load font files</td>
+                    </tr>
+                    <tr>
+                        <td>www.googleapis.com</td>
+                        <td>Access Google Fonts API</td>
+                    </tr>
+                    <tr>
+                        <td>extensionpay.com</td>
+                        <td>Process premium subscriptions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Last Updated" date above. Continued use of the extension after changes constitutes acceptance.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <p>If you have questions about this Privacy Policy:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@stellabrand.apli.space">support@stellabrand.apli.space</a></p>
+                <p><strong>Website:</strong> <a href="https://stellabrand.apli.space">stellabrand.apli.space</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 StellaBrand. All rights reserved.</p>
+            <p>
+                <a href="https://stellabrand.apli.space">Home</a> |
+                <a href="https://chrome.google.com/webstore/detail/stellabrand">Chrome Web Store</a>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
