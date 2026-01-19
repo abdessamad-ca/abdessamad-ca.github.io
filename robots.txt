@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdessamad-ca.github.io/sitemap.xml
+
+# Allow Google Search Console crawlers
+User-agent: Googlebot
+Allow: /
